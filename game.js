@@ -123,6 +123,15 @@ $(document).ready(function() {
         $(".score_row").append('<img src="img/star_outline.png" class="mr-1 ml-1" alt="">');
     }
 
+    $("#rounds_number_input button").click(function() {
+        rounds_to_win = $("#rounds_number").val();
+
+        $(".score_row").empty();
+        for (let i = 1; i <= rounds_to_win; i++) {
+            $(".score_row").append('<img src="img/star_outline.png" class="mr-1 ml-1" alt="">');
+        }
+    });
+
     //Initialization by computer
     var computer_choice = choices[Math.floor(Math.random() * 3)];
     /* Cheat tool

@@ -29,6 +29,10 @@ h3 {
     font-weight: 300;
 }
 
+#rounds_number_input {
+    width: 300px;
+}
+
 #game_background {
     height: 100%;
     background-color: #313131;
